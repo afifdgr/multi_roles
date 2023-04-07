@@ -43,7 +43,7 @@ const Products = db.define(
   }
 );
 
-Users.hashMany(Products);
-Products.belongsTo("Users", { foreignKey: "userId" });
+Users.hasMany(Products);
+Products.belongsTo(Users, { foreignKey: "userId" });
 
 export default Products;

@@ -1,6 +1,6 @@
-import { sequelize } from "sequelize";
+import { Sequelize } from "sequelize";
 
-const db = new sequelize("multi_roles_db", "root", "", {
+const db = new Sequelize("multi_roles_db", "root", "", {
   host: "localhost",
   dialect: "mysql",
 });
