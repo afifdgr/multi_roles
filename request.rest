@@ -55,9 +55,40 @@ Content-Type: application/json
     "password": "123456"
 }
 
-
 ###
 GET http://localhost:5000/me
 
 ###
 DELETE http://localhost:5000/logout
+
+###
+// Get All Product
+GET http://localhost:5000/products
+
+###
+// Get Single Product
+GET http://localhost:5000/products/484ebf92-e6e3-4a8d-b7ef-b51641730a50
+
+###
+// Create Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Produk 6",
+    "price": "10000"
+}
+
+###
+// Update Product
+PATCH http://localhost:5000/products/484ebf92-e6e3-4a8d-b7ef-b51641730a50
+Content-Type: application/json
+
+{
+    "name": "Produk New Update",
+    "price": "10000"
+}
+
+###
+// Delete Product
+DELETE http://localhost:5000/products/484ebf92-e6e3-4a8d-b7ef-b51641730a50
